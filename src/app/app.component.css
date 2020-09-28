@@ -1,12 +1,12 @@
 
 /* for horizontal menu*/
-.container{
+/* .container{
   margin:10px;
 
-} 
+}  */
 
 /* for vertical menu */
-/* 
+
 .outerContainer{
     display: flex;
     flex-direction: row;
@@ -28,4 +28,4 @@
     width:250px;
     border-bottom:3px outset palegreen;
     text-align: left;
-} */
+}
