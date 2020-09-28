@@ -1,0 +1,31 @@
+
+/* for horizontal menu*/
+/* .container{
+  margin:10px;
+
+}  */
+
+/* for vertical menu */
+
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+}
+.navMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: yellowgreen;
+    border-right:2px solid yellow;
+    overflow-y: auto;
+}
+
+.container{
+    margin: 5px;
+    padding:20px;
+}
+.navMenu button{
+    width:250px;
+    border-bottom:3px outset palegreen;
+    text-align: left;
+}

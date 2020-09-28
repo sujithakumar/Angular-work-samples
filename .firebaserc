@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-samples-a2000": {
+      "hosting": {
+        "Game-Board": [
+          "angular-samples-a2000"
+        ]
+      }
+    }
+  }
+}
