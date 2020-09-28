@@ -13,15 +13,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
-import { ExampleComponent } from './example/example.component';
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ExampleComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
