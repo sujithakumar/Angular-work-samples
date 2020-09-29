@@ -1,0 +1,11 @@
+.childContainer{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.childContainer div{
+    border : 3px solid green;
+    margin:12px;
+    padding: 20px;
+}
+

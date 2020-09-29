@@ -6,17 +6,39 @@ body {
 }
 body {
     margin: 0;
-    font-family: "Times New Roman", Times, serif !important;
-    font-size: 30px;
+    font-size: 14px !important;
 }
 header {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
     text-align: center;
 }
+
 h4 {
-    font-weight: bolder !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+    font-size: 17px;
 }
-.childContainer{
-    border: 3px solid salmon;
-    margin : 20px;
-    padding : 10px;
+
+.headContainer {
+    background-color: #f9d29d;
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+    
 }
+
+.childContainer {
+    border: 3px dotted turquoise;
+    margin: 12px;
+    padding: 12px;
+}
+
+.mat-button {
+    padding: 4px !important;
+    border-radius: 5px !important;
+    background-color:#d5adc8 !important;
+}
+
+.mat-button:hover {
+    background-color: #f9d29d !important;
+}
+

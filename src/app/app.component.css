@@ -1,6 +1,3 @@
-
-
-
 /* for horizontal menu*/
 /* .container{
   margin:10px;
@@ -9,28 +6,39 @@
 
 /* for vertical menu */
 
-.outerContainer{
+.outerContainer {
     display: flex;
     flex-direction: row;
 }
-.navMenu{
+/* .navMenu{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: yellowgreen;
-    border-right:2px solid yellow;
+    background-color: #26f596;
+    border-right:4px inset turquoise;
     overflow: hidden;
+} */
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9d29d;
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);    
+    border-right: 4px solid turquoise;
+    border-left: 2px solid turquoise;
+    overflow: hidden;
+    color: grey;
+}
+.container {
+    width: 100%;
+}
+.navMenu button {
+    width: 250px;
+    border-bottom: 1.5px dotted #0499f2;
+    text-align: left;
+    margin: 1px;
+    padding :5px;
 }
 
-.container{
-    margin: 5px;
-    padding:20px;
-    width : 100%;
-    border:2px solid grey;
-    box-shadow: 2px 2px;
-}
-.navMenu button{
-    width : 300px;
-    border-bottom:3px outset palegreen;
-    text-align: left;
+.mat-button {
+    background-color: transparent !important;
 }

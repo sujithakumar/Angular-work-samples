@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule } from '@angular/common/http';
@@ -14,12 +14,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { FacebookModule } from 'ngx-facebook';
 
+
 // user defined
 import { HomeComponent } from './home/home.component';
 import { FBIntegrationComponent } from './fb-integration/fb-integration.component';
 import { ComponentInteractionOneComponent } from './component-interaction-one/component-interaction-one.component';
 import { ComponentInteractionTwoComponent } from './component-interaction-two/component-interaction-two.component';
 import { ChildComponent } from './child/child.component';
+import { Child1Component } from './component-interaction-two/child1/child1.component';
+import { Child2Component } from './component-interaction-two/child2/child2.component';
+import { KeyCompComponent } from './key-comp/key-comp.component';
 
 
 
@@ -30,7 +34,10 @@ import { ChildComponent } from './child/child.component';
     FBIntegrationComponent,
     ComponentInteractionOneComponent,
     ComponentInteractionTwoComponent,
-    ChildComponent
+    ChildComponent,
+    Child1Component,
+    Child2Component,
+    KeyCompComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,8 @@ import { ChildComponent } from './child/child.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

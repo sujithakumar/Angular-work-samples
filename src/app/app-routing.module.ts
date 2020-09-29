@@ -4,6 +4,7 @@ import { ComponentInteractionOneComponent } from './component-interaction-one/co
 import { ComponentInteractionTwoComponent } from './component-interaction-two/component-interaction-two.component';
 import { FBIntegrationComponent } from './fb-integration/fb-integration.component';
 import { HomeComponent } from './home/home.component';
+import { KeyCompComponent } from './key-comp/key-comp.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'fb', component: FBIntegrationComponent },
   {path:'CI1', component:ComponentInteractionOneComponent},
   {path:'CI2', component:ComponentInteractionTwoComponent},
+  {path:'keyComp',component : KeyCompComponent}
 
 ];
 

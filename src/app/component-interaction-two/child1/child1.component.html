@@ -1,0 +1,46 @@
+<header>
+    <section>
+        <h4>
+            Child A
+        </h4>
+    </section>
+</header>
+
+<hr>
+
+<div>
+   
+</div>
+<br>
+<br>
+
+<ng-container>
+    <form [formGroup]="childAform" (ngSubmit)="onSubmit()">
+
+        Name: <input type="text" formControlName="name" class="form-control" />
+        <br><br>
+        Password: <input type="password" formControlName="password" class="form-control" />
+        <br><br>
+        Phone Number: <input type="text" formControlName="Phone" class="form-control" />
+        <br><br>
+        <div>
+            click this <button mat-button>Button</button> to send <b>Child A</b> values to <b>child B</b>
+        </div>
+
+    </form>
+
+    <div>
+        <details>
+            <summary (click)="checkForData()">Data from Child B</summary>
+            <ng-container *ngIf=" childB else noData" >
+                <p>Name <b>{{childB.name}}</b></p>
+                <p>Password <b>{{childB.password}}</b></p>
+                <p>Phone <b>{{childB.Phone}}</b></p>
+            </ng-container>
+            <ng-template #noData>
+                <p>No data received.Please Check if you have submited the data</p>
+            </ng-template>
+
+        </details>       
+    </div>
+</ng-container>
