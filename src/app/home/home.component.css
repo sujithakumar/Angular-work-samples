@@ -1,0 +1,10 @@
+.child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.child div{
+    border : 1px dotted green;
+    margin:12px;
+    padding: 20px;
+}

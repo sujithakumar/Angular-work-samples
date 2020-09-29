@@ -6,25 +6,28 @@ body {
 }
 body {
     margin: 0;
-    font-size: 14px !important;
+    font-size: 15px !important;
 }
 header {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
-        sans-serif;
     text-align: center;
 }
 
 h4 {
     font-weight: bold !important;
     text-decoration: underline;
-    font-size: 17px;
+    font-size: 18px;
+}
+p,
+div {
+    padding: 6px;
+}
+.headContainer {
+    padding:8px;
+    background-color: #fec84e;
+    background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%);
+    border :10px outset  #ffdea8;
 }
 
-.headContainer {
-    background-color: #f9d29d;
-    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
-    
-}
 
 .childContainer {
     border: 3px dotted turquoise;
@@ -35,10 +38,9 @@ h4 {
 .mat-button {
     padding: 4px !important;
     border-radius: 5px !important;
-    background-color:#d5adc8 !important;
+    background-color: #ffef77 !important;
 }
 
 .mat-button:hover {
-    background-color: #f9d29d !important;
+    background-color: pink !important;
 }
-
