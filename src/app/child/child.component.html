@@ -1,0 +1,11 @@
+<h4>This is a child component</h4>
+
+<div *ngIf="messageFromParent">
+    <strong>Boom!</strong> Triggered by Parent component
+</div>
+
+<hr>
+<div>
+    click this <button mat-button (click)="sendMessageToParent()">Button</button> to show or hide message in
+    <b>Parent</b>
+</div>

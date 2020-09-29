@@ -1,0 +1,28 @@
+<header>
+    <section>
+        <h4>
+            Passing data between related components
+        </h4>
+        <p>Use of @input @output</p>
+    </section>
+</header>
+
+<hr>
+
+<h4>This is a Parent component</h4>
+
+<div>
+    click this <button mat-button (click)="passInfoToChild()">Button</button> to show or hide message in <b>child</b>
+</div>
+
+<hr>
+<div *ngIf="messageFromChild">
+    <strong>Boom!</strong> Triggered by Child component
+</div>
+
+
+<div class="childContainer">
+    <app-child [messageFromParent]="messageToSend" (messageToEmit)="messageFromChildEvent($event)"></app-child>
+</div>
+
+

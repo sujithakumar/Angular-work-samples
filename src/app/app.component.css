@@ -1,4 +1,6 @@
 
+
+
 /* for horizontal menu*/
 /* .container{
   margin:10px;
@@ -17,15 +19,18 @@
     align-items: flex-start;
     background-color: yellowgreen;
     border-right:2px solid yellow;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .container{
     margin: 5px;
     padding:20px;
+    width : 100%;
+    border:2px solid grey;
+    box-shadow: 2px 2px;
 }
 .navMenu button{
-    width:250px;
+    width : 300px;
     border-bottom:3px outset palegreen;
     text-align: left;
 }

@@ -12,12 +12,25 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { FacebookModule } from 'ngx-facebook';
+
+// user defined
 import { HomeComponent } from './home/home.component';
+import { FBIntegrationComponent } from './fb-integration/fb-integration.component';
+import { ComponentInteractionOneComponent } from './component-interaction-one/component-interaction-one.component';
+import { ComponentInteractionTwoComponent } from './component-interaction-two/component-interaction-two.component';
+import { ChildComponent } from './child/child.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FBIntegrationComponent,
+    ComponentInteractionOneComponent,
+    ComponentInteractionTwoComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +43,8 @@ import { HomeComponent } from './home/home.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    FacebookModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
