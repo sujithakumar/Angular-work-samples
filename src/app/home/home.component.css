@@ -4,7 +4,9 @@
     justify-content: space-evenly;
 }
 .child div{
-    border : 1px dotted green;
+    border : 1px dotted blueviolet;
+    box-shadow:1px 0px 9px 0px rgb(0 0 0 / 20%), 1px -8px 12px 0 rgb(0 0 0 / 19%);;
     margin:12px;
     padding: 20px;
+
 }
