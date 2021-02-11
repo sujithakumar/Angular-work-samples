@@ -24,6 +24,9 @@ import { ChildComponent } from './child/child.component';
 import { Child1Component } from './component-interaction-two/child1/child1.component';
 import { Child2Component } from './component-interaction-two/child2/child2.component';
 import { KeyCompComponent } from './key-comp/key-comp.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
+import { HttpExampleComponent } from './http-example/http-example.component';
+import { SubVsObsComponent } from './sub-vs-obs/sub-vs-obs.component';
 
 
 
@@ -37,7 +40,10 @@ import { KeyCompComponent } from './key-comp/key-comp.component';
     ChildComponent,
     Child1Component,
     Child2Component,
-    KeyCompComponent
+    KeyCompComponent,
+    FormValidationComponent,
+    HttpExampleComponent,
+    SubVsObsComponent
   ],
   imports: [
     BrowserModule,

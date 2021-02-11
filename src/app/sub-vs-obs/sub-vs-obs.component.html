@@ -1,0 +1,35 @@
+<header class="headContainer">
+    <section>
+        <h4>
+            Subjects vs observables
+        </h4>
+        <p>unicast and multicast</p>
+    </section>
+</header>
+
+<hr>
+
+<div class="childContainer">
+    <h5>Subjects - subject received the same event firing (unicast)</h5>
+    <button mat-button (click)="callSubject()">generate Value</button> 
+    <ul>
+        <li *ngFor="let data of SubResult" style="margin-top:10px;">
+            {{data}}
+        </li>
+    </ul>
+    <h5>Observables - observable received separate firings of the event (multicast)</h5>
+    <button mat-button (click)="callObservable()">generate Value</button> 
+    <ul>
+        <li *ngFor="let data of obsRes" style="margin-top:10px;">
+            {{data}}
+        </li>
+    </ul>
+
+    <h5>Subject as Observables</h5>
+    <button mat-button (click)="subAsObs()">generate Value</button> 
+    <ul>
+        <li *ngFor="let data of subjectAsObs" style="margin-top:10px;">
+            {{data}}
+        </li>
+    </ul>
+</div>

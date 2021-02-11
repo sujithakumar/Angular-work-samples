@@ -18,7 +18,7 @@ export class Child2Component implements OnInit {
   constructor(private formBuilder: FormBuilder, private ComponentInteractionService: ComponentInteractionService) { }
 
   ngOnInit(): void {
-    this.childBform
+    
   }
 
   onSubmit() {

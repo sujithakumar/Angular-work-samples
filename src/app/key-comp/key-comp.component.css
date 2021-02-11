@@ -2,11 +2,20 @@
     display:grid;
     justify-content:space-evenly;
     grid-template-columns:50% 50%;
-    grid-gap: 12px;
+    grid-gap: 15px;
     margin:20px;
 }
 
 .container>div{
-    border :1px dotted blue;
-    padding : 5px;
+    padding : 10px;
+}
+
+summary+p::first-letter{
+    color:crimson;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+summary{
+    font-weight: bold;
 }
